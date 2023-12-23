@@ -131,18 +131,6 @@ UK<br/>
     <li><a href="https://www.facebook.com/">Facebook</a></li>
 </ol>
 ```
-## Void Elements
-```HTML
-<h1>William Blake</h1> 
-<p>
-17 south molton street<br/>
-London<br/>
-W1K 5QT<br/>
-UK<br/>
-</p> 
-
-<hr/>
-```
 ## Image Elements
 ```HTML
 <h1>I am a Cat Person</h1>
@@ -184,9 +172,4 @@ UK<br/>
 
 ```
 
-## Image Elements
-```HTML
-<h1>I am a Cat Person</h1>
-<!-- Kitten image URL -->
-<img src="https://raw.githubusercontent.com/appbrewery/webdev/main/kitten.jpeg" alt="kitten image"/>
-```
+
