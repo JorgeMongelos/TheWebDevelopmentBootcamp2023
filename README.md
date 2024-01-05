@@ -141,6 +141,47 @@ UK<br/>
 <!-- Puppy image URL -->
 <img src="https://raw.githubusercontent.com/appbrewery/webdev/main/puppy.gif" alt="puppy image"/>
 ```
+
+## Absolute Vs Relative File Paths
+```HTML
+<h1>All the Animals</h1>
+<h2>Rabbit:</h2>
+    <img src="./rabbit.png" alt="rabbit image"/>
+<h2>Cat:</h2>
+    <img src="./Folder3/cat.png" alt="cat image"/>
+<h2>Dog:</h2>
+    <img src="../dog.png" alt="dog image"/>
+<h2>Fish:</h2>
+    <img src="../Folder1/fish.png" alt="fish image"/>
+<h2>Bird:</h2>
+    <img src="../Folder1/Folder2/bird.png" alt="bird image"/>
+```
+
+## What are Web Pages?
+```HTML
+<h1>Welcome to My Website!</h1>
+<!-- Add an image of yourself that links to the about page -->
+    <a href="./public/about.html"><img src="./assets/images/cat.png" alt="cat image"/></a>
+<hr />
+<!-- Add a link to your contact me page here -->
+<a href="./public/contact.html">Contact Me</a>
+```
+
+## The HTML Boilerplate
+```HTML
+<!DOCTYPE html>    
+    <html lang="en">
+        <head>
+            <meta charset="UTF-8"/>
+            <title>My Website!</title>
+        </head>
+        <body>
+            <h1>Hello World!</h1>
+        </body>
+    </html>
+```
+
+
 ## Project #1: Movie Ranking Project.
 ```HTML
 <!-- Write your code below -->
@@ -171,5 +212,25 @@ UK<br/>
 <a href="https://www.google.com/maps/@35.7040744,139.5577317,3a,75y,289.6h,87.01t,0.72r/data=!3m6!1e1!3m4!1sgT28ssf0BB2LxZ63JNcL1w!2e0!7i13312!8i6656">Google map link</a>
 
 ```
-
-
+## Project 3: Angela Yu's Portfolio
+```HTML
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8"/>
+        <title>My Website</title>
+    </head>
+    <body>
+        <h1>Angela Yu's Portfolio</h1>
+        <h2>I'm a Web Developer</h2>
+        <hr/>
+        <h3><a href="./public/movie-ranking.html">Movie Ranking Project</a></h3>
+            <img src="./assets/images/movie-ranking.png" height="200px"/>
+        <h3><a href="./public/birthday-invite.html">Birthday Invite Project</a></h3>
+            <img src="./assets/images/birthday-invite.png" height="200px"/>
+        <hr/>
+        <a href="./public/about.html">About Me</a>
+        <a href="./public/contact.html">Contact Me</a>
+    </body>
+</html>
+```
