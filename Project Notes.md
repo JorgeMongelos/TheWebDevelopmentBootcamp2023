@@ -181,7 +181,7 @@ div{
     text-align: center;
 }
 ```
-## Project 6: CSS Flag Project
+## Project #6: CSS Flag Project
 
 ```CSS
 .flag{
@@ -269,13 +269,11 @@ https://appbrewery.github.io/flag-of-laos/
 
 
 
-
-
 ## Placeholder
 
-```HTML
+```CSS
 
 ```
-```CSS
+```HTML
 
 ```

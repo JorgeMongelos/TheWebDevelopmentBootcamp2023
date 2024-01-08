@@ -344,7 +344,7 @@ ul p.done{ /* Combining Combiners example */
 
 </html>
 ```
-## Placeholder
+## CSS Positioning.
 
 ```CSS
 .blue-box{
@@ -386,7 +386,93 @@ ul p.done{ /* Combining Combiners example */
 
 </html>
 ```
+## CSS Display.
 
+```CSS
+/* style.css */
+
+p {
+    color: white;
+  }
+
+  .red {
+    display: inline-block;
+    width: 200px;
+    height: 200px;
+    background-color: red;
+  }
+
+  .green {
+    display: inline-block;
+    width: 200px;
+    height: 200px;
+    background-color: green;
+  }
+
+  .blue {
+    display: inline-block;
+    width: 200px;
+    height: 200px;
+    background-color: blue;
+  }
+```
+```CSS
+/* style2.css */
+
+p {
+    color: white;
+  }
+
+  .red {
+    display: block;
+    width: 200px;
+    height: 200px;
+    background-color: red;
+  }
+
+  .green {
+    display: block;
+    width: 200px;
+    height: 200px;
+    background-color: green;
+  }
+
+  .blue {
+    display: block;
+    width: 200px;
+    height: 200px;
+    background-color: blue;
+  }
+```
+```HTML
+<!-- HTML Portion -->
+
+<!DOCTYPE html>
+<html>
+
+<!-- 
+  TODO
+1. By changing only the display property of the CSS make all 3 squares line up horizontally like in goal1 image.
+2. Change only the display property to make all 3 squares line up vertically like in goal2 image. 
+-->
+
+<head>
+  <meta charset="UTF-8"/>
+  <title>CSS Display Property Example</title>
+      <link rel="stylesheet" href="./style.css">
+  <!-- <link rel="stylesheet" href="./style2.css"> -->
+</head>
+
+
+<body>
+  <h1>CSS Display Property</h1>
+  <p class="red">Red Paragraph </p>
+  <p class="green">Green Paragraph</p>
+  <p class="blue">Blue Paragraph</p>
+</body>
+
+</html>
+```
 
 
 
