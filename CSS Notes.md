@@ -227,13 +227,164 @@ li[value="4"]{
 
 </html>
 ```
-## Placeholder
+## The Cascade - Specificity and Inheritance.
 
 ```HTML
+<!-- HTML Portion-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>CSS Cascade</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+  <div id="outer-box" class="box">
+    <div class="box">
+      <p>Yellow Text</p>
+      <div class="box inner-box">
+        <p class="white-text">White Text</p>
+      </div>
+    </div>
+    <div class="box">
+      <p>Yellow Text</p>
+      <div class="box inner-box">
+        <p class="white-text">White Text</p>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
 
 ```
 ```CSS
+/* CSS Portion  */
 
+#outer-box{
+  background-color: purple;
+  padding: 10px;
+}
+.box {
+  background-color: blue;
+  padding: 10px;
+}
+
+.inner-box{
+  background-color: red
+}
+
+p {
+  color: yellow;
+  margin: 0;
+  padding: 0;
+}
+
+.white-text{
+  color: white;
+}
+```
+## Combining CSS Selectors.
+
+```CSS
+/* Write your code here: */
+h1, h2{ /* Grouping example */
+    color: blueviolet;
+}
+
+.box > p{ /* Parent-child inheritance example */
+    color: firebrick;
+}
+
+.box li{ /* Descendant inheritance example */
+    color: blue;
+}
+
+li.done{ /* Chaining example */
+    color: seagreen;
+}
+
+ul p.done{ /* Combining Combiners example */
+    font-size: 0.5rem;
+}
+```
+```HTML
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Combining CSS Selectors</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+
+<!-- Don't change any of the HTML code! -->
+
+<body>
+  <h1>To Do List</h1>
+  <h2>Monday</h2>
+  <div class="box">
+    <p class="done">Do these things today!</p>
+    <ul class="list">
+      <li>Wash Clothes</li>
+      <li class="done">Read</li>
+      <li class="done">Maths Questions</li>
+    </ul>
+  </div>
+
+  <ul>
+    <p class="done">Other items</p>
+  </ul>
+  <p>The best preparation for tomorrow is doing your best today.</p>
+
+</body>
+
+</html>
+```
+## Placeholder
+
+```CSS
+.blue-box{
+    position: relative;
+    height: 300px;
+    width: 500px;
+    background-color: blue;
+    margin-top: 200px;
+    margin-left: 200px;
+}
+
+.red-circle{
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    background-color: red;
+    border-radius: 50%;
+    z-index: 1;
+    left: 250px;
+    top: 150px;
+}
+```
+```HTML
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>CSS Positioning Exercise</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+  <div class="blue-box">
+    <div class="red-circle">
+    </div>
+  </div>
+
+</body>
+
+</html>
 ```
 
 
@@ -245,9 +396,9 @@ li[value="4"]{
 
 ## Placeholder
 
-```HTML
+```CSS
 
 ```
-```CSS
+```HTML
 
 ```
