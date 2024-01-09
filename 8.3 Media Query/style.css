@@ -1,0 +1,36 @@
+body {
+    background-color: aquamarine;
+  }
+
+  /*max-width: screen bigger than.
+   *min-width: screen less than.
+   */
+
+   /* Mobile devices */
+   @media (min-width: 319px) and (max-width: 480px) {
+    body {
+      background-color: lightsalmon;
+    }
+  }
+
+  /* iPads and tablets */
+  @media (min-width: 481px) and (max-width: 1200px) {
+    body {
+      background-color: powderblue;
+    }
+  }
+
+  /* laptops */
+  @media (min-width: 1201px) and (max-width: 1600px) {
+    body {
+      background-color: limegreen;
+    }
+  }
+
+ /* Desktops */
+    @media (min-width: 1601px) {
+      body {
+        background-color: seagreen;
+      }
+    }
+  

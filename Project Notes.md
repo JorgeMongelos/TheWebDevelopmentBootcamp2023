@@ -263,6 +263,259 @@ https://appbrewery.github.io/flag-of-laos/
 
 </html>
 ```
+## Project #7: WEb Design Agency.
+
+```CSS
+/* style.css*/
+
+body {
+  font-family: "Poppins", sans-serif;
+  margin: 50px 50px 0 50px;
+  background-color: #faf9f6;
+  display: flex;
+  flex-direction: column;
+  min-height: 95vh;
+}
+.main {
+  flex: 1;
+}
+
+h1 {
+  font-size: 5rem;
+  margin-right: 800px;
+}
+
+span{
+  color: midnightblue;
+}
+
+.left{
+  float: left;
+  
+}
+
+.right{
+  float: right;
+}
+
+.tile-image{
+  float: left;
+  height: 200px;
+  width: 300px;
+  padding-right: 50px;
+}
+
+.card-text{
+  text-align: justify;
+  margin-left: -430px;
+}
+
+footer {
+  clear: both;
+  text-align: right;
+  color: midnightblue;
+}
+```
+```CSS
+/* mobiles.css*/
+
+@media (min-width: 319px) and (max-width: 480px) {
+      body {
+        font-family: "Poppins", sans-serif;
+        margin: 13px 13px 0 13x;
+        background-color: #faf9f6;
+        display: flex;
+        flex-direction: column;
+        min-height: 95vh;
+      }
+      .main {
+        flex: 1;
+      }
+    
+      .logo{
+         height: 18px;
+      }
+      
+      h1 {
+        font-size: 2rem;
+        margin: 0px 24px;
+        text-align: center;
+      }
+      
+      span{
+        color: midnightblue;
+      }
+      
+      .tile-image{
+        height: 200px;
+        width: 300px;
+        margin-left: -10px;
+      }
+      
+      .card-text{
+        height: 200px;
+        width: 250px;
+        margin-left: 50px;
+      }
+      
+      footer {
+        clear: both;
+        text-align: right;
+        color: midnightblue;
+      }    
+  }
+```
+```CSS
+/* tablets.css*/
+
+@media (min-width: 481px) and (max-width: 1200px) {
+  body {
+    font-family: "Poppins", sans-serif;
+    margin: 26px 26px 0 26x;
+    background-color: #faf9f6;
+    display: flex;
+    flex-direction: column;
+    min-height: 95vh;
+  }
+  .main {
+    flex: 2;
+  }
+
+  .logo{
+     height: 36px;
+  }
+  
+  h1 {
+    font-size: 4rem;
+    margin: 0px 95px;
+    text-align: center;
+  }
+  
+  span{
+    color: midnightblue;
+  }
+  
+  .tile-image{
+    float: left;
+    margin-top: 50px;
+    height: 200px;
+    width: 250px;
+  }
+
+  .card-title{
+   margin-top: 210px;
+  }
+  
+  .card-text{
+    height: 200px;
+    width: 250px;
+    margin-left: 0px;
+  }
+  
+  footer {
+    clear: both;
+    text-align: right;
+    color: midnightblue;
+  }  
+}
+```
+```CSS
+/* Laptops*/
+
+@media (min-width: 481px) and (max-width: 1200px) {
+  body {
+    font-family: "Poppins", sans-serif;
+    margin: 26px 26px 0 26x;
+    background-color: #faf9f6;
+    display: flex;
+    flex-direction: column;
+    min-height: 95vh;
+  }
+  .main {
+    flex: 2;
+  }
+
+  .logo{
+     height: 36px;
+  }
+  
+  h1 {
+    font-size: 4rem;
+    margin: 0px 95px;
+    text-align: center;
+  }
+  
+  span{
+    color: midnightblue;
+  }
+  
+  .tile-image{
+    float: left;
+    margin-top: 50px;
+    height: 200px;
+    width: 250px;
+  }
+
+  .card-title{
+   margin-top: 210px;
+  }
+  
+  .card-text{
+    height: 200px;
+    width: 250px;
+    margin-left: 0px;
+  }
+  
+  footer {
+    clear: both;
+    text-align: right;
+    color: midnightblue;
+  }  
+}
+```
+```HTML
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Agency</title>
+  <link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" href="./laptops.css">
+  <link rel="stylesheet" href="./tablets.css">
+  <link rel="stylesheet" href="./mobiles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <div class="main">
+    <img class="logo" src="./assets/images/logo.png" alt="logo">
+    <h1>We are a <span>Creative</span> Design Agency</h1>
+    <div class="left card"><img class="tile-image" src="./assets/images/beautiful.jpg" alt="hand and flower in water">
+      <h2 class="card-title">Beauty</h2>
+      <p class="card-text">We strive to create the most beautiful websites for all your needs. Working closely with you
+        to
+        design and
+        develop an amazing website for your business.</p>
+    </div>
+
+    <div class="right card"><img class="tile-image" src="./assets/images/construction.jpg" alt="metal structure">
+      <h2 class="card-title">Construction</h2>
+      <p class="card-text">Built by our team of professional developers, we ensure the most rigourous and modern websites. Built from
+        scratch using HTML and CSS. Only the best for you.</p>
+    </div>
+
+  </div>
+  <footer>
+    <p>Create. Develop. Design.</p>
+  </footer>
+</body>
+
+</html>
+```
 
 
 
