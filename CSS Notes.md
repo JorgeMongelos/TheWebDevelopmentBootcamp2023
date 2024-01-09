@@ -1,3 +1,5 @@
+# CSS Notes
+
 ## How to add css?
 ```HTML
 <!--External-->
@@ -473,8 +475,154 @@ p {
 
 </html>
 ```
+## CSS Float.
 
+```CSS
+div {
+    display: inline-block;
+    width: 40%;
+  }
+  img{
+    float: left;
+    padding: 10px;
+  }
 
+  p {
+    font-size: 2em;
+   
+  }
+
+  .cat {
+    background-color: aquamarine;
+    float: left;
+  }
+
+  .dog {
+    background-color: coral;
+    float: right;
+  }
+
+  footer {
+    text-align: center;
+    background-color: blueviolet;
+    clear: both;
+  }
+```
+```HTML
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- TODO
+1. Make both paragraph elements wrap around the image.
+2. Use Float to move the cat div to the left and the dog div to the right.
+3. Use clear to make the footer go below both the cat and dog div. -->
+
+<head>
+  <meta charset="UTF-8">
+  <title>CSS Float</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+  <div class="cat">
+    <h2>CatCSS</h2>
+
+    <img src="cat.jpeg" alt="cat in a box" />
+    <p class="first-paragraph">Nap all day cat dog hate mouse eat string barf pillow no baths hate everything but kitty
+      poochy. Sleep on keyboard
+      toy
+      mouse squeak roll over. Mesmerizing birds. Poop on grasses licks paws destroy couch intently sniff hand. The dog
+      smells
+      bad gnaw.</p>
+  </div>
+  <div class="dog">
+    <h2>DogCSS</h2>
+    <img src="dog.jpeg" alt="dogs in a box" />
+    <p class="second-paragraph">Heckin good boys and girls long woofer big ol wow very biscit long woofer heck what a
+      nice
+      floof, long doggo noodle
+      horse vvv very taste wow. Very taste wow many pats aqua doggo he made many woofs pupperino, puggo doing me a
+      frighten.</p>
+  </div>
+
+  <footer>Copyright. This is the footer</footer>
+</body>
+
+</html>
+```
+## CSS Media Query
++ [Media Query Docs](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_media_queries/Using_media_queries)
+
+```CSS
+body {
+    background-color: aquamarine;
+  }
+
+  /*max-width: screen less than.
+   *min-width: screen bigger than.
+   */
+
+   /* Mobile devices */
+   @media (min-width: 319px) and (max-width: 480px) {
+    body {
+      background-color: lightsalmon;
+    }
+  }
+
+  /* iPads and tablets */
+  @media (min-width: 481px) and (max-width: 1200px) {
+    body {
+      background-color: powderblue;
+    }
+  }
+
+  /* laptops */
+  @media (min-width: 1201px) and (max-width: 1600px) {
+    body {
+      background-color: limegreen;
+    }
+  }
+
+ /* Desktops */
+    @media (min-width: 1601px) {
+      body {
+        background-color: seagreen;
+      }
+    }
+  
+```
+```HTML
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- 
+TODO: Change the background color for each device
+[lightsalmon] Mobile Devices: 319px — 480px
+[powderblue] iPads and Tablets: 481px — 1200px
+[limegreen] Laptops: 1201px — 1600px
+[seagreen] Desktops: 1601px and more
+-->
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1" />
+  <title>Media Query</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+</body>
+
+</html>
+```
+## Placeholder
+
+```CSS
+
+```
+```HTML
+
+```
 
 
 
