@@ -615,8 +615,218 @@ TODO: Change the background color for each device
 
 </html>
 ```
-## Placeholder
+## Display: Flex.
+```CSS
+p {
+    padding: 0;
+    margin: 0;
+    font-weight: 700;
+  }
 
+  li {
+    list-style: none;
+  }
+
+  .container {
+    display: inline-flex;
+    gap: 10px;
+    padding: 10px;
+    background-color: gold;
+  }
+```
+```HTML
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Column Layout Methods</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+  <div class="container">
+    <p>Page Layout Methods</p>
+
+    <li><a href="./html-table.html">HTML Table</a></li>
+    <li><a href="./inline-block.html">Inline-Block</li>
+    <li><a href="./absolute-position.html">Absolute Positioning</li>
+    <li><a href="./float.html">Float</li>
+    <li><a href="./flex.html">Flexbox</li>
+
+  </div>
+</body>
+
+</html>
+```
+## Flex Direction
+```CSS
+/* CSS Portion */
+
+.container{
+    color: white;
+    border: 5px solid gold;
+    display: inline-flex; /* solution inline */
+    flex-direction: column; /* solution inline */
+  }
+
+  /* solution block */
+  .container > *{
+    flex-basis: 100px; 
+  }
+
+
+  /*
+Select all the elements that are the direct
+children of the .container class.
+  */
+
+  .red {background-color: #eb4d4b;}
+  .orange {background-color: #f0932b;}
+  .yellow {background-color: #f6e58d;}
+  .green {background-color: #6ab04c;}
+  .blue {background-color: #4834d4;}
+  .indigo {background-color: #30336b;}
+  .purple {background-color: #be2edd;}
+
+```
+```HTML
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Flex Direction</title>
+  <!-- HINT:
+  https://developer.mozilla.org/en-US/docs/Web/CSS/Universal_selectors
+  https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Selectors/Combinators 
+  -->
+  <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+  <div class="container">
+    <div class="red">Red</div>
+    <div class="orange">Orange</div>
+    <div class="yellow">Yellow</div>
+    <div class="green">Green</div>
+    <div class="blue">Blue</div>
+    <div class="indigo">Indigo</div>
+    <div class="purple">Purple</div>
+  </div>
+  
+</body>
+
+</html>
+```
+## Flex Layout
++ [Flexbox properties sample](https://appbrewery.github.io/flex-layout/)
++ [CSS Tricks - Flexbox Cheatsheet](https://css-tricks.com/snippets/css/a-guide-to-flexbox/)
++ [Flexbox Froggy](https://appbrewery.github.io/flexboxfroggy/)
++ <table>
+    <thead>
+    </thead>
+    <tbody>
+      <tr>
+        <td> Order Property</td>
+        <td>
+          <ul>
+            <li> Children flex item. </li>
+          </ul>
+        </td>
+      </tr>
+     <tr>
+        <td> flex-wrap property</td>
+        <td>
+          <ul>
+            <li>Parent flex item</li>
+            <li>nowrap default</li>
+            <li>wrap</li>
+            <li>wrap reverse</li>
+          </ul>
+        </td>
+      </tr>
+         <tr>
+          <td>justify-content</td>
+          <td>
+            <ul>
+              <li>Parent flex item</li>
+              <li> item distribution accros main axis.</li>
+                <li> Set height 
+                <ul>
+                  <li>vh = viewport height.</li>
+                  <li>measurement unit.</li>
+                </ul>
+              </li>
+              <li>flex-wrap: wrap;
+                <ul>
+                  <li>flex-start default</li>
+                  <li>flex-end</li>
+                  <li>center</li>
+                  <li>space-between</li>
+                  <li>space-around</li>
+                  <li>space-evenly</li>
+                </ul>
+              </li>
+            </ul>
+          </td>
+      </tr>
+      <tr>
+        <td>align-items</td>
+        <td>
+          <ul>
+            <li>Parent flex item</li>
+            <li>align-self: flex-start;</li>
+            <li> item distribution accross the cross axis.</li>
+            <li> Set height 
+                <ul>
+                  <li>vh = viewport height.</li>
+                  <li>measurement unit.</li>
+                </ul
+            </li>
+            <li>flex-wrap:nowrap;
+              <ul>
+                <li>flex-start default</li>
+                <li>flex-end</li>
+                <li>center</li>
+                <li>space-between</li>
+                <li>space-around</li>
+                <li>space-evenly</li>
+              </ul>
+            </li>
+          </ul>
+        </td>
+      </tr>
+      <tr>
+        <td>align-content</td>
+          <td>
+          <ul>
+            <li>Parent flex item</li>
+            <li> item distribution accross the main axis.</li>
+            <li> Set height 
+                <ul>
+                  <li>vh = viewport height.</li>
+                  <li>measurement unit.</li>
+                </ul
+            </li>
+            <li>flex-wrap:wrap;
+              <ul>
+                <li>flex-start default</li>
+                <li>flex-end</li>
+                <li>center</li>
+                <li>space-between</li>
+                <li>space-around</li>
+                <li>space-evenly</li>
+              </ul>
+            </li>
+          </ul>
+        </td>
+      </tr>     
+    </tbody>
+  </table> 
+## Flex Sizing
 ```CSS
 
 ```
@@ -627,12 +837,31 @@ TODO: Change the background color for each device
 
 
 
-
 ## Placeholder
 
 ```CSS
 
 ```
 ```HTML
+```
+## Useful samples
 
+```CSS
+
+```
+```HTML
+<table>
+    <thead>
+    </thead>
+    <tbody>
+      <tr>
+        <td></td>
+        <td>
+          <ul>
+            <li></li>
+          </ul>
+      </td>
+      </tr>
+    </tbody>
+</table> 
 ```

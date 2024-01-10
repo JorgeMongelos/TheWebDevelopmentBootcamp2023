@@ -263,7 +263,7 @@ https://appbrewery.github.io/flag-of-laos/
 
 </html>
 ```
-## Project #7: WEb Design Agency.
+## Project #7: Web Design Agency.
 
 ```CSS
 /* style.css*/
@@ -474,6 +474,8 @@ footer {
 }
 ```
 ```HTML
+<!-- HTML Portion-->
+
 <!DOCTYPE html>
 <html lang="en">
 
