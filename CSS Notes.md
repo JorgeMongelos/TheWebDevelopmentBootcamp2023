@@ -725,114 +725,334 @@ children of the .container class.
 + [Flexbox properties sample](https://appbrewery.github.io/flex-layout/)
 + [CSS Tricks - Flexbox Cheatsheet](https://css-tricks.com/snippets/css/a-guide-to-flexbox/)
 + [Flexbox Froggy](https://appbrewery.github.io/flexboxfroggy/)
-+ <table>
+<table>
+  <thead>
+  </thead>
+  <tbody>
+    <tr>
+      <td> Order Property</td>
+      <td>
+        <ul>
+          <li> 
+            .green{
+              order: 0-10;
+            }
+          </li>
+          <li> Children flex item. </li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <td> flex-wrap property</td>
+      <td>
+        <ul>
+          <li>Parent flex item</li>
+          <li>nowrap default</li>
+          <li>wrap</li>
+          <li>wrap reverse</li>
+        </ul>
+      </td>
+    </tr>
+        <tr>
+        <td>justify-content</td>
+        <td>
+          <ul>
+            <li>Parent flex item</li>
+            <li> item distribution accros main axis.</li>
+            </li>
+            <li>flex-wrap: wrap;
+              <ul>
+                <li>flex-start default</li>
+                <li>flex-end</li>
+                <li>center</li>
+                <li>space-between</li>
+                <li>space-around</li>
+                <li>space-evenly</li>
+              </ul>
+            </li>
+          </ul>
+        </td>
+    </tr>
+    <tr>
+      <td>align-items</td>
+      <td>
+        <ul>
+          <li>Parent flex item</li>
+          <li> item distribution accross the cross axis.</li>
+            <li>flex-wrap:nowrap;
+            <ul>
+              <li>flex-start default</li>
+              <li>flex-end</li>
+              <li>center</li>
+              <li>space-between</li>
+              <li>space-around</li>
+              <li>space-evenly</li>
+            </ul>
+          </li>
+          <li>align-self: ;
+            <ul>
+              <li>flex-start default</li>
+              <li>flex-end</li>
+              <li>center</li>
+              <li>space-between</li>
+              <li>space-around</li>
+              <li>space-evenly</li>
+            </ul>
+          </li>
+          <li> Set height 
+              <ul>
+                <li>vh = viewport height.</li>
+                <li>measurement unit.</li>
+              </ul>
+          </li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <td>align-content</td>
+        <td>
+        <ul>
+          <li>Parent flex item</li>
+          <li> item distribution accross the main axis.</li>
+          <li> Set height 
+              <ul>
+                <li>vh = viewport height.</li>
+                <li>measurement unit.</li>
+              </ul>
+          </li>
+          <li>flex-wrap:wrap;
+            <ul>
+              <li>flex-start default</li>
+              <li>flex-end</li>
+              <li>center</li>
+              <li>space-between</li>
+              <li>space-around</li>
+              <li>space-evenly</li>
+            </ul>
+          </li>
+        </ul>
+      </td>
+    </tr>     
+  </tbody>
+</table> 
+
+## Flex Sizing
++ [Flexbox sizing exercise](https://appbrewery.github.io/flexbox-sizing-exercise)
+
+<table>
+  <thead>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Size Behavior<br/> Hierachy</td>
+      <td>
+        <ol>
+          <li>min-width/max-width</li>
+          <li>flex-basis</li>
+          <li>Width</li>
+          <li>Content width</li>
+        </ol>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+## Display: Grid.
+
++ [Grid Vs Flexbox](https://appbrewery.github.io/grid-vs-flexbox)
+<table>
     <thead>
     </thead>
     <tbody>
       <tr>
-        <td> Order Property</td>
+        <td>Flexbox Vs Grid.</td>
         <td>
           <ul>
-            <li> Children flex item. </li>
+            <li>Flexbox: 1 dimensional structure.</li>
+            <li>Grid: 2 dimensional structure.</li>
           </ul>
-        </td>
+      </td>
       </tr>
-     <tr>
-        <td> flex-wrap property</td>
-        <td>
-          <ul>
-            <li>Parent flex item</li>
-            <li>nowrap default</li>
-            <li>wrap</li>
-            <li>wrap reverse</li>
-          </ul>
-        </td>
-      </tr>
-         <tr>
-          <td>justify-content</td>
-          <td>
-            <ul>
-              <li>Parent flex item</li>
-              <li> item distribution accros main axis.</li>
-                <li> Set height 
-                <ul>
-                  <li>vh = viewport height.</li>
-                  <li>measurement unit.</li>
-                </ul>
-              </li>
-              <li>flex-wrap: wrap;
-                <ul>
-                  <li>flex-start default</li>
-                  <li>flex-end</li>
-                  <li>center</li>
-                  <li>space-between</li>
-                  <li>space-around</li>
-                  <li>space-evenly</li>
-                </ul>
-              </li>
-            </ul>
-          </td>
-      </tr>
-      <tr>
-        <td>align-items</td>
-        <td>
-          <ul>
-            <li>Parent flex item</li>
-            <li>align-self: flex-start;</li>
-            <li> item distribution accross the cross axis.</li>
-            <li> Set height 
-                <ul>
-                  <li>vh = viewport height.</li>
-                  <li>measurement unit.</li>
-                </ul
-            </li>
-            <li>flex-wrap:nowrap;
-              <ul>
-                <li>flex-start default</li>
-                <li>flex-end</li>
-                <li>center</li>
-                <li>space-between</li>
-                <li>space-around</li>
-                <li>space-evenly</li>
-              </ul>
-            </li>
-          </ul>
-        </td>
-      </tr>
-      <tr>
-        <td>align-content</td>
-          <td>
-          <ul>
-            <li>Parent flex item</li>
-            <li> item distribution accross the main axis.</li>
-            <li> Set height 
-                <ul>
-                  <li>vh = viewport height.</li>
-                  <li>measurement unit.</li>
-                </ul
-            </li>
-            <li>flex-wrap:wrap;
-              <ul>
-                <li>flex-start default</li>
-                <li>flex-end</li>
-                <li>center</li>
-                <li>space-between</li>
-                <li>space-around</li>
-                <li>space-evenly</li>
-              </ul>
-            </li>
-          </ul>
-        </td>
-      </tr>     
     </tbody>
-  </table> 
-## Flex Sizing
+</table> 
+
+```CSS
+.container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    width: 800px;
+}
+
+.white{
+    background-color: #f0d9b2;
+    height: 100px;
+    width: 100px; 
+   
+}
+
+.black{
+    background-color: #b58863;
+    height: 100px;
+    width: 100px;
+}
+
+```
+```HTML
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Chessboard</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+  <div class="container">
+    <div class="white"></div>
+    <div class="black"></div>
+    <div class="white"></div>
+    <div class="black"></div>
+    <div class="white"></div>
+    <div class="black"></div>
+    <div class="white"></div>
+    <div class="black"></div>
+    <div class="black"></div>
+    <div class="white"></div>
+    <div class="black"></div>
+    <div class="white"></div>
+    <div class="black"></div>
+    <div class="white"></div>
+    <div class="black"></div>
+    <div class="white"></div>
+    <div class="white"></div>
+    <div class="black"></div>
+    <div class="white"></div>
+    <div class="black"></div>
+    <div class="white"></div>
+    <div class="black"></div>
+    <div class="white"></div>
+    <div class="black"></div>
+    <div class="black"></div>
+    <div class="white"></div>
+    <div class="black"></div>
+    <div class="white"></div>
+    <div class="black"></div>
+    <div class="white"></div>
+    <div class="black"></div>
+    <div class="white"></div>
+    <div class="white"></div>
+    <div class="black"></div>
+    <div class="white"></div>
+    <div class="black"></div>
+    <div class="white"></div>
+    <div class="black"></div>
+    <div class="white"></div>
+    <div class="black"></div>
+    <div class="black"></div>
+    <div class="white"></div>
+    <div class="black"></div>
+    <div class="white"></div>
+    <div class="black"></div>
+    <div class="white"></div>
+    <div class="black"></div>
+    <div class="white"></div>
+    <div class="white"></div>
+    <div class="black"></div>
+    <div class="white"></div>
+    <div class="black"></div>
+    <div class="white"></div>
+    <div class="black"></div>
+    <div class="white"></div>
+    <div class="black"></div>
+    <div class="black"></div>
+    <div class="white"></div>
+    <div class="black"></div>
+    <div class="white"></div>
+    <div class="black"></div>
+    <div class="white"></div>
+    <div class="black"></div>
+    <div class="white"></div>
+  </div>
+</body>
+
+</html>
+```
+## Grid sizing.
+
++ [Grid sizing sample](https://appbrewery.github.io/grid-sizing)
+  
+<table>
+    <thead>
+    </thead>
+    <tbody>
+      <tr>
+        <td>grid-template-rows</td>
+        <td>
+          <ul>
+            <li>auto = fit content.</li>
+          </ul>
+      </td>
+      </tr>
+        <tr>
+        <td>grid-template-columns</td>
+        <td>
+          <ul>
+            <li>auto = 100% width.</li>
+          </ul>
+      </td>
+      </tr>
+        <tr>
+        <td>grid-template</td>
+        <td>
+          <ul>
+            <li> row-height row-width/column-height column-width</li>
+          </ul>
+      </td>
+      </tr>
+      <tr>
+        <td>fr</td>
+        <td>
+          <ul>
+            <li> fractional ratio.</li>
+          </ul>
+      </td>
+      </tr>
+      <tr>
+        <td>min max size</td>
+        <td>
+          <ul>
+            <li> grid-template-columns: 200px minmax(400px,800px)</li>
+          </ul>
+      </td>
+      </tr>
+      <tr>
+        <td>repeat</td>
+        <td>
+          <ul>
+            <li> grid-template-rows: repeat(times, size)</li>
+            <li> grid-template-columns: repeat(times, size)</li>
+          </ul>
+      </td>
+      </tr>
+           <tr>
+        <td>auto-rows</td>
+        <td>
+          <ul>
+            <li> grid-template-rows: size</li>
+          </ul>
+      </td>
+      </tr>
+    </tbody>
+</table> 
+
 ```CSS
 
 ```
 ```HTML
-
 ```
+
+
 
 
 
