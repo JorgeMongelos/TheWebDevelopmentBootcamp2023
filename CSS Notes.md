@@ -615,457 +615,111 @@ TODO: Change the background color for each device
 
 </html>
 ```
-## Display: Flex.
-```CSS
-p {
-    padding: 0;
-    margin: 0;
-    font-weight: 700;
-  }
-
-  li {
-    list-style: none;
-  }
-
-  .container {
-    display: inline-flex;
-    gap: 10px;
-    padding: 10px;
-    background-color: gold;
-  }
-```
-```HTML
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Column Layout Methods</title>
-  <link rel="stylesheet" href="./style.css">
-</head>
-
-<body>
-  <div class="container">
-    <p>Page Layout Methods</p>
-
-    <li><a href="./html-table.html">HTML Table</a></li>
-    <li><a href="./inline-block.html">Inline-Block</li>
-    <li><a href="./absolute-position.html">Absolute Positioning</li>
-    <li><a href="./float.html">Float</li>
-    <li><a href="./flex.html">Flexbox</li>
-
-  </div>
-</body>
-
-</html>
-```
-## Flex Direction
-```CSS
-/* CSS Portion */
-
-.container{
-    color: white;
-    border: 5px solid gold;
-    display: inline-flex; /* solution inline */
-    flex-direction: column; /* solution inline */
-  }
-
-  /* solution block */
-  .container > *{
-    flex-basis: 100px; 
-  }
-
-
-  /*
-Select all the elements that are the direct
-children of the .container class.
-  */
-
-  .red {background-color: #eb4d4b;}
-  .orange {background-color: #f0932b;}
-  .yellow {background-color: #f6e58d;}
-  .green {background-color: #6ab04c;}
-  .blue {background-color: #4834d4;}
-  .indigo {background-color: #30336b;}
-  .purple {background-color: #be2edd;}
-
-```
-```HTML
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Flex Direction</title>
-  <!-- HINT:
-  https://developer.mozilla.org/en-US/docs/Web/CSS/Universal_selectors
-  https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Selectors/Combinators 
-  -->
-  <link rel="stylesheet" href="./style.css">
-</head>
-
-<body>
-  <div class="container">
-    <div class="red">Red</div>
-    <div class="orange">Orange</div>
-    <div class="yellow">Yellow</div>
-    <div class="green">Green</div>
-    <div class="blue">Blue</div>
-    <div class="indigo">Indigo</div>
-    <div class="purple">Purple</div>
-  </div>
-  
-</body>
-
-</html>
-```
-## Flex Layout
-+ [Flexbox properties sample](https://appbrewery.github.io/flex-layout/)
-+ [CSS Tricks - Flexbox Cheatsheet](https://css-tricks.com/snippets/css/a-guide-to-flexbox/)
-+ [Flexbox Froggy](https://appbrewery.github.io/flexboxfroggy/)
+## What is Bootstrap?
 <table>
-  <thead>
-  </thead>
-  <tbody>
-    <tr>
-      <td> Order Property</td>
-      <td>
-        <ul>
-          <li> 
-            .green{
-              order: 0-10;
-            }
-          </li>
-          <li> Children flex item. </li>
-        </ul>
-      </td>
-    </tr>
-    <tr>
-      <td> flex-wrap property</td>
-      <td>
-        <ul>
-          <li>Parent flex item</li>
-          <li>nowrap default</li>
-          <li>wrap</li>
-          <li>wrap reverse</li>
-        </ul>
-      </td>
-    </tr>
-        <tr>
-        <td>justify-content</td>
+    <thead>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Bootstrap</td>
         <td>
           <ul>
-            <li>Parent flex item</li>
-            <li> item distribution accros main axis.</li>
-            </li>
-            <li>flex-wrap: wrap;
+            <li>External CSS Framework</li>
+            <li>12 column layout</li>
+            <li>Cons
               <ul>
-                <li>flex-start default</li>
-                <li>flex-end</li>
-                <li>center</li>
-                <li>space-between</li>
-                <li>space-around</li>
-                <li>space-evenly</li>
+                <li>class bloat</li>
+                <li>customization</li>
               </ul>
             </li>
           </ul>
         </td>
-    </tr>
-    <tr>
-      <td>align-items</td>
-      <td>
-        <ul>
-          <li>Parent flex item</li>
-          <li> item distribution accross the cross axis.</li>
-            <li>flex-wrap:nowrap;
-            <ul>
-              <li>flex-start default</li>
-              <li>flex-end</li>
-              <li>center</li>
-              <li>space-between</li>
-              <li>space-around</li>
-              <li>space-evenly</li>
-            </ul>
-          </li>
-          <li>align-self: ;
-            <ul>
-              <li>flex-start default</li>
-              <li>flex-end</li>
-              <li>center</li>
-              <li>space-between</li>
-              <li>space-around</li>
-              <li>space-evenly</li>
-            </ul>
-          </li>
-          <li> Set height 
-              <ul>
-                <li>vh = viewport height.</li>
-                <li>measurement unit.</li>
-              </ul>
-          </li>
-        </ul>
-      </td>
-    </tr>
-    <tr>
-      <td>align-content</td>
-        <td>
-        <ul>
-          <li>Parent flex item</li>
-          <li> item distribution accross the main axis.</li>
-          <li> Set height 
-              <ul>
-                <li>vh = viewport height.</li>
-                <li>measurement unit.</li>
-              </ul>
-          </li>
-          <li>flex-wrap:wrap;
-            <ul>
-              <li>flex-start default</li>
-              <li>flex-end</li>
-              <li>center</li>
-              <li>space-between</li>
-              <li>space-around</li>
-              <li>space-evenly</li>
-            </ul>
-          </li>
-        </ul>
-      </td>
-    </tr>     
-  </tbody>
-</table> 
-
-## Flex Sizing
-+ [Flexbox sizing exercise](https://appbrewery.github.io/flexbox-sizing-exercise)
-
-<table>
-  <thead>
-  </thead>
-  <tbody>
-    <tr>
-      <td>Size Behavior<br/> Hierachy</td>
-      <td>
-        <ol>
-          <li>min-width/max-width</li>
-          <li>flex-basis</li>
-          <li>Width</li>
-          <li>Content width</li>
-        </ol>
-      </td>
-    </tr>
-  </tbody>
-</table>
-
-## Display: Grid.
-
-+ [Grid Vs Flexbox](https://appbrewery.github.io/grid-vs-flexbox)
-<table>
-    <thead>
-    </thead>
-    <tbody>
-      <tr>
-        <td>Flexbox Vs Grid.</td>
-        <td>
-          <ul>
-            <li>Flexbox: 1 dimensional structure.</li>
-            <li>Grid: 2 dimensional structure.</li>
-          </ul>
-      </td>
       </tr>
     </tbody>
 </table> 
 
 ```CSS
-.container{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-    width: 800px;
+.flex-container{
+ display: flex;   
+ justify-content: center;
+ align-items: center;
+ min-height: 100vh;
 }
-
-.white{
-    background-color: #f0d9b2;
-    height: 100px;
-    width: 100px; 
-   
-}
-
-.black{
-    background-color: #b58863;
-    height: 100px;
-    width: 100px;
-}
-
 ```
 ```HTML
-<!DOCTYPE html>
-<html>
-
+<!doctype html>
+<html lang="en">
 <head>
-  <title>Chessboard</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Bootstrap</title>
+  <!-- TODO 1: Add the Bootstrap link here. -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
   <link rel="stylesheet" href="./style.css">
 </head>
-
 <body>
-  <div class="container">
-    <div class="white"></div>
-    <div class="black"></div>
-    <div class="white"></div>
-    <div class="black"></div>
-    <div class="white"></div>
-    <div class="black"></div>
-    <div class="white"></div>
-    <div class="black"></div>
-    <div class="black"></div>
-    <div class="white"></div>
-    <div class="black"></div>
-    <div class="white"></div>
-    <div class="black"></div>
-    <div class="white"></div>
-    <div class="black"></div>
-    <div class="white"></div>
-    <div class="white"></div>
-    <div class="black"></div>
-    <div class="white"></div>
-    <div class="black"></div>
-    <div class="white"></div>
-    <div class="black"></div>
-    <div class="white"></div>
-    <div class="black"></div>
-    <div class="black"></div>
-    <div class="white"></div>
-    <div class="black"></div>
-    <div class="white"></div>
-    <div class="black"></div>
-    <div class="white"></div>
-    <div class="black"></div>
-    <div class="white"></div>
-    <div class="white"></div>
-    <div class="black"></div>
-    <div class="white"></div>
-    <div class="black"></div>
-    <div class="white"></div>
-    <div class="black"></div>
-    <div class="white"></div>
-    <div class="black"></div>
-    <div class="black"></div>
-    <div class="white"></div>
-    <div class="black"></div>
-    <div class="white"></div>
-    <div class="black"></div>
-    <div class="white"></div>
-    <div class="black"></div>
-    <div class="white"></div>
-    <div class="white"></div>
-    <div class="black"></div>
-    <div class="white"></div>
-    <div class="black"></div>
-    <div class="white"></div>
-    <div class="black"></div>
-    <div class="white"></div>
-    <div class="black"></div>
-    <div class="black"></div>
-    <div class="white"></div>
-    <div class="black"></div>
-    <div class="white"></div>
-    <div class="black"></div>
-    <div class="white"></div>
-    <div class="black"></div>
-    <div class="white"></div>
+  <div class="flex-container ">
+    <!-- TODO 2: Add the Bootstrap Prebuilt Card here -->
+    <div class="card" style="width: 18rem;">
+      <img src="./flower.jpg" class="card-img-top" alt="sunflower">
+      <div class="card-body">
+        <h5 class="card-title">Card title</h5>
+        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        <a href="#" class="btn btn-primary">Go somewhere</a>
+      </div>
+    </div>
+    <!-- TODO 3: Change the image src to display the flower.jpg image. -->
   </div>
 </body>
-
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 </html>
 ```
-## Grid sizing.
+## Bootstrap Layout.
+[Bootrstrap Layout Exercise](https://appbrewery.github.io/bootstrap-layout/)
+```CSS
+/*Exercise 1*/
+<!-- Modify the HTML code for the purple boxes below so it behaves like the green ones. -->
+  <div class="row">
+    <div class="col-xl-6 .col-sm">50% desktop, 100% mobile</div>
+    <div class="col-xl-6 .col-sm">50% desktop, 100% mobile</div>
+  </div>
 
-+ [Grid sizing sample](https://appbrewery.github.io/grid-sizing)
-  
+/*Exercise 2*/
+<!-- Modify the HTML below to make the blue boxes behave like the red ones. -->
+<div class="row">
+  <div class="col-xl-6 col-sm-12">Column 1</div>
+  <div class="col-xl-3 col-sm-6">Column 2</div>
+  <div class="col-xl-3 col-sm-6">Column 3</div>
+</div>
+
+/*Exercise 3*/
+<!-- Modify the HTML below to make the indigo boxes behave like the blue ones. -->
+<div class="row">
+  <div class="col-xl-1 col-sm-4">Column 1</div>
+  <div class="col-xl-11 col-sm-8">Column 2</div>
+</div>
+```
+## Bootstrap Components.
+```CSS
+
+```
+```HTML
 <table>
     <thead>
     </thead>
     <tbody>
       <tr>
-        <td>grid-template-rows</td>
+        <td></td>
         <td>
           <ul>
-            <li>auto = fit content.</li>
-          </ul>
-      </td>
-      </tr>
-        <tr>
-        <td>grid-template-columns</td>
-        <td>
-          <ul>
-            <li>auto = 100% width.</li>
-          </ul>
-      </td>
-      </tr>
-        <tr>
-        <td>grid-template</td>
-        <td>
-          <ul>
-            <li> row-height row-width/column-height column-width</li>
-          </ul>
-      </td>
-      </tr>
-      <tr>
-        <td>fr</td>
-        <td>
-          <ul>
-            <li> fractional ratio.</li>
-          </ul>
-      </td>
-      </tr>
-      <tr>
-        <td>min max size</td>
-        <td>
-          <ul>
-            <li> grid-template-columns: 200px minmax(400px,800px)</li>
-          </ul>
-      </td>
-      </tr>
-      <tr>
-        <td>repeat</td>
-        <td>
-          <ul>
-            <li> grid-template-rows: repeat(times, size)</li>
-            <li> grid-template-columns: repeat(times, size)</li>
-          </ul>
-      </td>
-      </tr>
-           <tr>
-        <td>auto-rows</td>
-        <td>
-          <ul>
-            <li> grid-template-rows: size</li>
+            <li></li>
           </ul>
       </td>
       </tr>
     </tbody>
 </table> 
-
-```CSS
-
-```
-```HTML
-```
-
-
-
-
-
-
-## Placeholder
-
-```CSS
-
-```
-```HTML
 ```
 ## Useful samples
-
 ```CSS
 
 ```
