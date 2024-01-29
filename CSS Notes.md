@@ -699,43 +699,4 @@ TODO: Change the background color for each device
   <div class="col-xl-11 col-sm-8">Column 2</div>
 </div>
 ```
-## Bootstrap Components.
-```CSS
 
-```
-```HTML
-<table>
-    <thead>
-    </thead>
-    <tbody>
-      <tr>
-        <td></td>
-        <td>
-          <ul>
-            <li></li>
-          </ul>
-      </td>
-      </tr>
-    </tbody>
-</table> 
-```
-## Useful samples
-```CSS
-
-```
-```HTML
-<table>
-    <thead>
-    </thead>
-    <tbody>
-      <tr>
-        <td></td>
-        <td>
-          <ul>
-            <li></li>
-          </ul>
-      </td>
-      </tr>
-    </tbody>
-</table> 
-```
