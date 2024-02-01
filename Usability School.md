@@ -219,7 +219,7 @@
               </ul>
             </li>
             <li>X-platform</li>
-            <li>Avoid banner cluter</li>
+            <li>Avoid banner clutter</li>
             <li>Avoid content overwhelm.</li>
           </ul>
           <li>Avoid Dark patterns</li>
@@ -228,38 +228,6 @@
     </tbody>
 </table>
 
-## Useful samples
-<table>
-    <thead>
-    </thead>
-    <tbody>
-      <tr>
-        <td></td>
-        <td>
-          <ul>
-            <li></li>
-          </ul>
-      </td>
-      </tr>
-    </tbody>
-</table>
-
-```CSS
-
-```
-```HTML
-<table>
-    <thead>
-    </thead>
-    <tbody>
-      <tr>
-        <td></td>
-        <td>
-          <ul>
-            <li></li>
-          </ul>
-      </td>
-      </tr>
-    </tbody>
-</table> 
-```
+## Web Design in Practice - Let's apply what we've learnt!
+[Daily UI](https://www.dailyui.co/)
+[Canva](https://www.canva.com/)

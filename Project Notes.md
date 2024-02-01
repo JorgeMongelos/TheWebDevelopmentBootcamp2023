@@ -518,17 +518,3 @@ footer {
 
 </html>
 ```
-
-
-
-
-
-
-## Placeholder
-
-```CSS
-
-```
-```HTML
-
-```
