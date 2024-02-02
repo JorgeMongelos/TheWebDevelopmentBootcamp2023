@@ -97,7 +97,63 @@ var name = "Angela";
 
 alert(message + " there, " + " " + name);
 ```
+## String Lengths and Retrieving the Number of Characters.
+```js
+var tweet = prompt("Write a tweet of 182 characters or less");
+var tweetCount = 182;
+var remainingCharacters = characterLimit - tweet.length;
 
+if(tweet.length <= tweetCount){
+    
+    console.log("You've writen " + tweet.length + " characters. You have " + remainingCharacters + " characters left.");
+    
+} else {
+
+    console.log("You've reached the character limit: " + remainingCharacters);
+    
+}
+```
+## Slicing and Extracting Parts of a String.
+```js
+//Sample
+var name = "Jorge";
+name.slice(0,1); // = "J"
+
+var name = "Jorge";
+name.slice(3,4); // = "e"
+
+var name = "Jorge";
+name.slice(0,3); // = "Jor"
+
+var name = "Jorge";
+name.slice(1,4); // = "org"
+
+//Lecture Exercise.
+var tweet = prompt("Compose your tweet");
+var tweetCount = 182;
+var tweetUnder = tweet.slice(0,182);
+var tweetModulo = tweetCount - tweet.length;
+
+if(tweet.length < tweetCount || tweet.length == tweetCount){
+
+   alert(" You have written " + tweet.length + ". You have " + tweetModulo +" characters left. " + tweetUnder); 
+}
+else{
+
+    alert("You've surpassed the character limit: " + tweet.length + " characters. " + tweetUnder);
+}
+```
+## Challenge: Changing String Casing.
+[JS slice() docs](https://www.w3schools.com/jsref/jsref_slice_string.asp)
+```js
+var name = prompt("What is your name?");
+var nameCapitalized = name.slice(0,1).toUpperCase() + name.slice(1).toLowerCase();
+alert("Hello " + nameCapitalized);
+```
+## Basic Arithmetic and the Modulo Operator in JavaScript.
+```js
+
+```
 ## Useful structures.
 <table>
     <tr>
