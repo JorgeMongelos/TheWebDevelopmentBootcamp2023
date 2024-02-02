@@ -144,13 +144,19 @@ else{
 }
 ```
 ## Challenge: Changing String Casing.
-[JS slice() docs](https://www.w3schools.com/jsref/jsref_slice_string.asp)
+[JS slice() method docs](https://www.w3schools.com/jsref/jsref_slice_string.asp)
 ```js
 var name = prompt("What is your name?");
 var nameCapitalized = name.slice(0,1).toUpperCase() + name.slice(1).toLowerCase();
 alert("Hello " + nameCapitalized);
 ```
 ## Basic Arithmetic and the Modulo Operator in JavaScript.
+```js
+var dogAge = Number(prompt("What's your dog's age?"));
+var humanAge = ((dogAge - 2) * 4) + 21;
+alert("Your dog is: " + humanAge + " years old in human age.");
+```
+## Fun.
 ```js
 
 ```
