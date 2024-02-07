@@ -156,8 +156,105 @@ var dogAge = Number(prompt("What's your dog's age?"));
 var humanAge = ((dogAge - 2) * 4) + 21;
 alert("Your dog is: " + humanAge + " years old in human age.");
 ```
-## Fun.
+## Functions Part 1: Creating and Calling Functions.
+[The Karel Robot Challenge](https://web.stanford.edu/~cpiech/karel/ide.html)
 ```js
+// First Challenge.
+function main(){
+   goOppositeCorner();
+}
+
+function goOppositeCorner(){
+
+   moveFourTimes()
+   turnLeft();
+   moveFourTimes()
+
+}
+
+function moveFourTimes(){
+
+   move();
+   move();
+   move();
+   move();
+
+}
+
+// Second Challenge.
+function main(){
+   
+   putBeeper();
+   diagonalMoveAndBeeper();
+   diagonalMoveAndBeeper();
+   diagonalMoveAndBeeper();
+   diagonalMoveAndBeeper();
+}
+
+function diagonalMoveAndBeeper(){
+
+   move();
+   turnLeft();
+   move();
+   putBeeper();
+   turnRight();
+   
+}
+
+// Third Challenge(YES!)
+function main(){
+
+   initiaLine();
+   oddLine();
+   evenLine();
+   oddLine();
+   evenLine();
+
+}
+
+function initiaLine(){
+   
+   putBeeper();
+   move();
+   move();
+   putBeeper();
+   move();
+   move();
+   putBeeper();
+   
+}
+
+function oddLine(){
+   
+   turnLeft();
+   move();
+   turnLeft();
+   move();
+   putBeeper();
+   move();
+   move();
+   putBeeper();
+   turnRight();
+   move();
+   
+}
+
+function evenLine(){
+   
+   turnLeft(); 
+   move();
+   putBeeper();
+   turnRight();
+   turnRight();
+   move();
+   move();
+   putBeeper();
+   move();
+   move();
+   putBeeper();   
+   
+}
+
 
 ```
 ## Useful structures.
