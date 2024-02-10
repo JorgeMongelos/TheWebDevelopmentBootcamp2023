@@ -254,27 +254,71 @@ function evenLine(){
    putBeeper();   
    
 }
-
-
 ```
-## Useful structures.
-<table>
-    <tr>
-        <thead>
-        <thead>
-    </tr>
-    <tr>
-        <tbody>
-            <td></td>
-            <td>
-                <ul>
-                    <li></li>
-                </ul>
-            </td>
-        </tbody>
-    </tr>
-</table>
-
+## Functions Part 2: Parameters and Arguments.
 ```js
+function getMilk(bottles, price){
 
+    var cost= Math.floor(bottles * price);
+    console.log("Leave house");
+    console.log("Move right");
+    console.log("Move right");
+    console.log("Move up");
+    console.log("Move up");
+    console.log("Move up");
+    console.log("Move up");
+    console.log("Move right");
+    console.log("Move right");
+    console.log("Buy " + bottles + " bottles of milk at " + price);
+    console.log("Calculate total cost");
+    console.log("Your total cost is: " + cost + " dollars");
+    console.log("Move left");
+    console.log("Move left");
+    console.log("Move down");
+    console.log("Move down");
+    console.log("Move left");
+    console.log("Move left");
+    console.log("Enter house");
+
+}
+```
+## Coding Exercise 2: Life in Weeks Coding Exercise.
+```js
+function lifeInWeeks(age) {
+    
+/************Don't change the code above************/    
+    
+    //Write your code here.
+    var ageAsInt = parseInt(age);
+    var yearsRemaining = 90 - ageAsInt;
+    var daysRemaining = yearsRemaining * 365;
+    var weeksRemaining = yearsRemaining * 52;
+    var monthsRemaining = yearsRemaining * 12;
+    console.log("You have " + daysRemaining + " days " + weeksRemaining + " weeks and " + monthsRemaining + " months left");
+
+/*************Don't change the code below**********/
+}
+lifeInWeeks(39);
+```
+## Coding Exercise 3: BMI Calculator.
+```js
+//Create your function below this line.
+//The first parameter should be the weight and the second should be the height.
+function bmiCalculator(weight, height){
+
+    var w = parseInt(weight);
+    var h = parseInt(height);
+    var r = Math.floor(w/(h * h)); 
+    return r;
+    
+}
+
+var bmi = bmiCalculator(65, 1.8);
+/* If my weight is 65Kg and my height is 1.8m, I should be able to call your function like this:
+
+var bmi = bmiCalculator(65, 1.8); 
+
+bmi should equal 20 when it's rounded to the nearest whole number.
+
+*/
 ```
